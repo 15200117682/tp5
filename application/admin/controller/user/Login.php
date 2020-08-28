@@ -6,7 +6,7 @@ use think\Request;
 
 class Login extends Controller
 {
-    //protected $middleware = ['Check'];
+    protected $middleware = ['Check'];
 
     public function add(Request $request){
         $arr = $request->param('code');
